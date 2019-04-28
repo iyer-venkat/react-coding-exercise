@@ -9,6 +9,7 @@ const Event = ({ content, classes, className }) => {
     image={content.image}
     title={content.title}
     shareTitle={content.shareTitle}
+    displayShareButtons={content.displayShareButtons !== undefined ? content.displayShareButtons : true}
     url={content.url}
     icon={getEventTypeIcon(content)}
     imageAspect={7 / 4}
